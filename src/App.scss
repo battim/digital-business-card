@@ -1,0 +1,121 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap";
+:root {
+  --white: #ffffff;
+  --off-white: #f5f5f5;
+  --gray-300: #d1d5db;
+  --gray-700: #374151;
+  --darkest-gray: #161619;
+  --darker-gray: #1A1B21;
+  --dark-gray: #1e1f26;
+  --gray: #23252c;
+  --blue: #5093e2;
+  --peach: #f3bf99;
+  --light-gray: #918e9b;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Inter, sans-serif;
+  background-color: var(--darkest-gray);
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+#root {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: var(--gray);
+  display: flex;
+  justify-content: center;
+  padding: 45px 115px;
+}
+.container {
+  max-width: 320px;
+}
+.profile--pic {
+  background-image: url("./assets/reddit-guy.png");
+  background-size: 170%;
+  background-position: 50% 30%;
+  width: 100%;
+  height: 320px;
+  border-radius: 10px 10px 0 0;
+}
+.content {
+  padding: 20px 35px 35px;
+}
+.header {
+  text-align: center;
+  &--name {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &--title {
+    color: var(--peach);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+}
+.buttons {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  > a {
+    padding: 9px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
+    width: 45%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+  svg {
+    margin-right: 8px;
+  }
+  a:first-child {
+    background-color: var(--white);
+    color: var(--gray-700);
+  }
+  a:last-child {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}
+.content {
+  color: var(--off-white);
+  background-color: var(--darker-gray);
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 10px;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+}
+.footer {
+  border-radius: 0 0 10px 10px;
+  background-color: var(--darkest-gray);
+  padding: 20px;
+  &--nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  &--nav a {
+    color: var(--light-gray);
+    font-size: 29px;
+  }
+}
