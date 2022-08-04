@@ -5,7 +5,7 @@ import Footer from "./components/Footer"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faLinkedin, faSquareFacebook, faSquareInstagram, faSquareGithub } from "@fortawesome/free-brands-svg-icons"
-import "./App.scss"
+import "./App.css"
 
 library.add(faEnvelope, faLinkedin, faSquareFacebook, faSquareInstagram, faSquareGithub)
 
